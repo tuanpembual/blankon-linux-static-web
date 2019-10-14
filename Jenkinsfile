@@ -5,6 +5,10 @@ pipeline {
             steps {
                 echo 'Hello world!' 
             }
+            steps {
+                npm install
+                npm run build
+            }
         }
     }
 }
